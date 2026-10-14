@@ -56,3 +56,4 @@ The project uses publicly available company press releases. No personal data is 
 ## Author
 
 Nikhila Gadge
+
