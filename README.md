@@ -40,7 +40,7 @@ question ──► embedding ──► similarity search ───────�
 
 ## Roadmap
 
-- [ ] Repository setup, environment, `.env` handling
+- [x] Repository setup, environment, `.env` handling
 - [ ] Ingestion: load press releases, chunk, embed, store in Chroma
 - [ ] Retrieval: top-k similarity search
 - [ ] Generation: grounded prompt, answer with source citations
