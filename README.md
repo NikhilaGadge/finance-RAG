@@ -40,10 +40,10 @@ question ──► embedding ──► similarity search ───────�
 ## Roadmap
 
 - [x] Repository setup, environment, `.env` handling
-- [ ] Ingestion
+- [x] Ingestion
   - [x] Download earnings press releases from SEC EDGAR (8-K, Item 2.02, Exhibit 99.1)
-  - [ ] Chunk the text
-  - [ ] Embed chunks and store them in Chroma
+  - [x] Chunk the text
+  - [x] Embed chunks and store them in Chroma
 - [ ] Retrieval: top-k similarity search
 - [ ] Generation: grounded prompt, answer with source citations
 - [ ] FastAPI `/ask` endpoint
