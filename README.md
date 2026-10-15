@@ -41,17 +41,26 @@ question ──► embedding ──► similarity search ───────�
 ## Roadmap
 
 - [x] Repository setup, environment, `.env` handling
-- [ ] Ingestion: load press releases, chunk, embed, store in Chroma
+- [ ] Ingestion
+  - [x] Download earnings press releases from SEC EDGAR (8-K, Item 2.02, Exhibit 99.1)
+  - [ ] Chunk the text
+  - [ ] Embed chunks and store them in Chroma
 - [ ] Retrieval: top-k similarity search
 - [ ] Generation: grounded prompt, answer with source citations
 - [ ] FastAPI `/ask` endpoint
 - [ ] Example questions and answers in this README
 - [ ] Faithfulness check: how often answers are supported by the retrieved sources
+- [ ] Improvements
+  - [ ] Automatically detect old SEC company IDs (CIKs) after reorganizations (e.g. BlackRock before Oct 2024)
+  - [ ] Table handling: extract tables with pandas, convert to Markdown/sentences, compare answer quality vs. flattened text
+  - [ ] Skip already-downloaded files when re-running the downloader
 - [ ] Optional: Docker container
 
 ## Data
 
-The project uses publicly available company press releases. No personal data is processed.
+Earnings press releases of five US-listed asset managers (BlackRock, State Street,
+T. Rowe Price, Invesco, Franklin Templeton), downloaded from SEC EDGAR.
+Downloaded files are stored locally in `data/raw/` and not committed.
 
 ## Author
 
