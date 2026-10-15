@@ -27,7 +27,7 @@ def embed_query(text):
 # ---------------------------------------------------------------------------
 # MAIN FUNCTION: top-k search
 # ---------------------------------------------------------------------------
-def retrieve(question, k=2, ticker=None):
+def retrieve(question, k=5, ticker=None):
     """
     Return the k chunks most similar to the question.
 

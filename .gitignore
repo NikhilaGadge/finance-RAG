@@ -4,5 +4,6 @@ __pycache__/
 *.pyc
 chroma_db/
 data/raw/
-To-Do.txt
+To-Do.md
+questions-eval.md
 data/processed/
