@@ -36,7 +36,6 @@ question ──► embedding ──► similarity search ───────�
 | API | FastAPI |
 | Vector store | Chroma |
 | Embeddings & generation | OpenAI API |
-| Configuration | `.env` (API key never committed) |
 
 ## Roadmap
 
